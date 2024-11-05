@@ -50,3 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleScrollAnimation);
     handleScrollAnimation();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const fadeInElements = document.querySelectorAll('.scroll-fade-in');
+    let delay = 0;
+
+    fadeInElements.forEach((element) => {
+        setTimeout(() => {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }, delay);
+        delay += 300; // Задержка между появлениями элементов
+    });
+});
