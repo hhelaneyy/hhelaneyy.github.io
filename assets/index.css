@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    animation: lightAnimation 10s infinite alternate;
+    animation: darkAnimation 10s infinite alternate;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 body.active {
-    animation: darkAnimation 10s infinite alternate;
+    animation: lightAnimation 10s infinite alternate;
 }
 
 @keyframes darkAnimation {
@@ -89,34 +89,34 @@ body.active {
 
 .main h1 {
     margin: 10px;
-    color: rgb(45, 45, 60);
+    color: rgb(232, 245, 233);
     font-size: 45px;
     transition: color 0.5s ease;
 }
 
 .main h2 {
-    color: rgb(45, 45, 60);
+    color: rgb(232, 245, 233);
     font-size: 25px;
     transition: color 0.5s ease;
 }
 
 .main h3 {
     margin: 20px;
-    color: rgb(45, 45, 60);
+    color: rgb(232, 245, 233);
     font-size: 10px;
     transition: color 0.5s ease;
 }
 
 body.active .main h1 {
-    color: rgb(232, 245, 233);
+    color: rgb(45, 45, 60);
 }
 
 body.active .main h2 {
-    color: rgb(232, 245, 233);
+    color: rgb(45, 45, 60);
 }
 
 body.active .main h3 {
-    color: rgb(232, 245, 233);
+    color: rgb(45, 45, 60)
 }
 
 .main p, .main span {
@@ -124,15 +124,16 @@ body.active .main h3 {
 }
 
 body.active .main p, body.active .main span {
-    color: rgb(200, 200, 200);
+    color: rgb(45, 45, 60);
+    'color: rgb(200, 200, 200);'
 }
 
 #button {
     position: fixed;
     top: 20px;
     left: 20px;
-    background-color: rgb(255, 183, 77);
-    color: rgb(45, 45, 60);
+    background-color: rgb(55, 55, 75);
+    color: rgb(232, 245, 233);
     width: 55px;
     height: 55px;
     font-size: 40px;
@@ -144,8 +145,8 @@ body.active .main p, body.active .main span {
 }
 
 body.active #button {
-    background-color: rgb(55, 55, 75);
-    color: rgb(232, 245, 233);
+    background-color: rgb(255, 183, 77);
+    color: rgb(45, 45, 60);
 }
 
 .button-icon-scale {
