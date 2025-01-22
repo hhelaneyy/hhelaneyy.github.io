@@ -1,0 +1,165 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+    background: #ffffff;
+    color: #333;
+}
+
+body.dark {
+    background: #1e1e1e;
+    color: #f4f4f4;
+}
+
+/* Стили для шапки */
+header {
+    display: flex;
+    justify-content: space-between; /* Раздвигает элементы к краям */
+    align-items: center;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Пространство между пунктами меню */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Стили кнопки переключения темы */
+.theme-toggle {
+    background: #444; /* Фон кнопки */
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Скруглённые углы */
+    padding: 10px 15px; /* Внутренние отступы */
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Анимация при наведении */
+}
+
+.theme-toggle:hover {
+    background: #666; /* Более светлый фон при наведении */
+    transform: scale(1.1); /* Лёгкое увеличение кнопки */
+}
+
+/* Секция с аватаркой */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero img.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Социальные сети */
+.socials {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.socials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.socials ul li {
+    margin: 10px 0;
+}
+
+.socials ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+body.dark .socials ul li a {
+    color: #6fa8dc;
+}
+
+/* Проекты */
+.projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Карточки проектов */
+.game-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card img {
+    width: 100%; /* Растягивает изображение на всю ширину карточки */
+    height: 150px; /* Устанавливает фиксированную высоту */
+    object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
+    border-radius: 5px; /* Скругляет углы изображений */
+    margin-bottom: 10px;
+}
+
+.game-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.game-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.game-card a:hover {
+    color: #0056b3;
+}
+
+.games-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Адаптивная сетка */
+    gap: 20px;
+}
+
+/* Анимации */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px); /* Увеличение начального смещения для более заметного эффекта */
+    animation: fadeIn 1.2s ease-out forwards; /* Увеличение длительности до 1.2 секунды */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #fff;
+}

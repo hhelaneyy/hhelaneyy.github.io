@@ -1,23 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Helaney</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/helaney.png">
-    <script src="theme.js" defer></script>
-    <link rel="stylesheet" href="assets/index.css">
+    <title>Helaney</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/helaney.png">
 </head>
 <body>
-<button id="button">🌙</button>
-<div class="main">
-    <div class="scroll-fade-in">
-        <div class="image">
-            <img src="assets/images/helaney.png" alt="helaney avatar">
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#socials">Соцсети</a></li>
+            <li><a href="#projects">Проекты</a></li>
+        </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+</header>
+
+<!-- Секция с аватаркой -->
+<section class="hero" id="about">
+    <div class="hero-content fade-in">
+        <img src="assets/images/helaney.png" alt="Avatar" class="avatar">
+        <p><h1>Привет! Я - Helaney</h1></p>
+        <p><h3>Пусть мир живёт по своим правилам. а я - буду жить по зову сердца.</h3></p>
+    </div>
+</section>
+
+<!-- Социальные сети -->
+<section class="socials" id="socials">
+    <h2 class="fade-in">Мои соцсети</h2>
+    <ul class="fade-in">
+        <li><a href="https://discord.gg/t4pskCsu4F" target="_blank">Discord</a></li>
+        <li><a href="https://t.me/hhelaneyy" target="_blank">Telegram</a></li>
+    </ul>
+</section>
+
+<!-- Проекты -->
+<section class="projects" id="projects">
+    <h2 class="fade-in">Мои проекты</h2>
+    <div class="games-list fade-in">
+        <div class="game-card">
+            <img src="assets/images/Yoro.png" alt="Yoro">
+            <h3>Yoro</h3>
+            <a href="https://helanova-team.github.io/yoro-web/" target="_blank">Посмотреть</a>
+        </div>
+        <div class="game-card">
+            <img src="assets/images/Pixel.png" alt="Pixel">
+            <h3>Pixel</h3>
+            <a href="https://pixel.example.com" target="_blank">Посмотреть</a>
+        </div>
+        <div class="game-card">
+            <img src="assets/images/Mayson.png" alt="Mayson">
+            <h3>Mayson</h3>
+            <a href="https://mayson.example.com" target="_blank">Посмотреть</a>
         </div>
     </div>
-    <h1>Здрасьте, я - Helaney!</h1>
-    <h2>Пусть мир живёт по своим правилам, а я - буду жить по зову сердца.</h2>
-</div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Helaney. Все права защищены.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
