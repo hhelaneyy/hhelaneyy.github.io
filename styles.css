@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f2f5;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #f0f2f5;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero .avatar {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.rainbow-text {
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.about, .projects {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.about.visible, .projects.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.dark-theme .project {
+    background-color: #1e1e1e;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-theme .theme-toggle {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 90px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px;
+    border-radius: 50%; /* Круглая кнопка */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.language-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-theme .language-toggle {
+    background-color: #333;
+}
+
+.language-toggle span {
+    font-size: 22px;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.info-item {
+    margin: 10px 0;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.dark-theme .info-item {
+    color: #f0f2f5;
+}
+
+.about-info.visible .info-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.dark-theme .btn {
+    background-color: #333;
+}
+
+.dark-theme .btn:hover {
+    background-color: #444;
+}
