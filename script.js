@@ -23,6 +23,7 @@ function updateLanguage() {
     const projectDescription = document.querySelector('.project p');
     const languageIcon = document.getElementById('language-icon');
     const socialsTitle = document.getElementById("socials-title");
+    const footerTitle = document.getElementById("fter");
 
     if (isEnglish) {
         pageTitle.textContent = "Helaney";
@@ -38,6 +39,7 @@ function updateLanguage() {
         projectDescription.textContent = "A multifunctional bot for Discord with cool features.";
         languageIcon.textContent = "🇬🇧 / 🇷🇺";
         socialsTitle.textContent = "Socials";
+        footerTitle.textContent = "© 2025, made with ❤️ by Helaney.";
     } else {
         pageTitle.textContent = "Helaney";
         heroText.textContent = "Привет! Я - Helaney";
@@ -52,6 +54,7 @@ function updateLanguage() {
         projectDescription.textContent = "Многофункциональный бот для Discord с крутыми возможностями.";
         languageIcon.textContent = "🇷🇺 / 🇬🇧";
         socialsTitle.textContent = "Социализация";
+        footerTitle.textContent = "© 2025, cделано с ❤️ от Helaney.";
     }
 }
 
