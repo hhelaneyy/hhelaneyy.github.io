@@ -32,14 +32,6 @@ body {
     margin-bottom: 20px;
 }
 
-.rainbow-text {
-    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-}
-
 .about, .projects {
     padding: 40px 20px;
     max-width: 800px;
@@ -173,4 +165,92 @@ body {
 
 .dark-theme .btn:hover {
     background-color: #444;
+}
+
+.socials {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.socials.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.social-buttons.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.dark-theme .btn {
+    background-color: #333;
+}
+
+.dark-theme .btn:hover {
+    background-color: #444;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    width: 80%;
+}
+
+.small-divider {
+    margin: 20px auto; /* Уменьшенный отступ перед "Социализацией" */
+}
+
+.dark-theme hr {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 0;
 }

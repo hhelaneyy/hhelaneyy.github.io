@@ -1,4 +1,4 @@
-let isEnglish = false;
+let isEnglish = true;
 
 function toggleTheme() {
     document.body.classList.toggle('dark-theme');
@@ -22,6 +22,7 @@ function updateLanguage() {
     const projectTitle = document.querySelector('.project h3');
     const projectDescription = document.querySelector('.project p');
     const languageIcon = document.getElementById('language-icon');
+    const socialsTitle = document.getElementById("socials-title");
 
     if (isEnglish) {
         pageTitle.textContent = "Helaney";
@@ -30,30 +31,32 @@ function updateLanguage() {
         aboutTitle.textContent = "About Me";
         aboutParagraphs[0].textContent = "🔞Age: 16";
         aboutParagraphs[1].textContent = "🎂Birthday: 27.05";
-        aboutParagraphs[2].textContent = "🌍From: Russia";
+        aboutParagraphs[2].textContent = "🌍Country: Russia";
         aboutParagraphs[3].textContent = "🪤Aspiring to become: Programmer";
         projectsTitle.textContent = "My Projects";
         projectTitle.textContent = "Yoro";
         projectDescription.textContent = "A multifunctional bot for Discord with cool features.";
         languageIcon.textContent = "🇬🇧 / 🇷🇺";
+        socialsTitle.textContent = "Socials";
     } else {
         pageTitle.textContent = "Helaney";
         heroText.textContent = "Привет! Я - Helaney";
         heroDescription.textContent = "Пусть мир живёт по своим правилам, а я - буду жить по зову сердца.";
         aboutTitle.textContent = "Обо мне";
-        aboutParagraphs[0].textContent = "🔞Возраст: 16 лет";
-        aboutParagraphs[1].textContent = "🎂День рождения: 27 мая";
-        aboutParagraphs[2].textContent = "🌍Из: Россия";
+        aboutParagraphs[0].textContent = "🔞Возраст: 16";
+        aboutParagraphs[1].textContent = "🎂День рождения: 27.05";
+        aboutParagraphs[2].textContent = "🌍Страна: Россия";
         aboutParagraphs[3].textContent = "🪤Планирую стать: Программистом";
         projectsTitle.textContent = "Мои проекты";
         projectTitle.textContent = "Yoro";
         projectDescription.textContent = "Многофункциональный бот для Discord с крутыми возможностями.";
         languageIcon.textContent = "🇷🇺 / 🇬🇧";
+        socialsTitle.textContent = "Социализация";
     }
 }
 
 function checkVisibility() {
-    const sections = document.querySelectorAll('.hero, .about, .projects');
+    const sections = document.querySelectorAll('.hero, .about, .projects, .socials, .social-buttons');
     sections.forEach(section => {
         const rect = section.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
