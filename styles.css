@@ -88,12 +88,7 @@ main {
   font-size: 1.8rem;
   cursor: pointer;
   padding: 0.5rem;
-  transition: transform 0.2s;
   color: white;
-}
-
-#lang-btn:hover {
-  transform: scale(1.1);
 }
 
 .modal {

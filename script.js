@@ -57,33 +57,25 @@ const translations = {
   }
 };
 
-let currentLang = localStorage.getItem('language') || 'ru';
 const langBtn = document.getElementById('lang-btn');
+let currentLang = localStorage.getItem('appLanguage') || 'ru';
 
-function applyTranslations(lang) {
-  document.title = translations[lang].page_title;
-  
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
-    }
-  });
-  
-  langBtn.textContent = lang === 'ru' ? '🇷🇺' : '🇬🇧';
-}
+  function applyTranslations(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      el.textContent = translations[lang][key] || el.textContent;
+    });
+      
+    langBtn.textContent = lang === 'ru' ? '🇷🇺' : '🇬🇧';
+  }
 
-if (langBtn) {
-  langBtn.addEventListener('click', () => {
+  langBtn.addEventListener('click', function() {
     currentLang = currentLang === 'ru' ? 'en' : 'ru';
-    localStorage.setItem('language', currentLang);
+    localStorage.setItem('appLanguage', currentLang);
     applyTranslations(currentLang);
   });
-}
 
-document.addEventListener('DOMContentLoaded', () => {
   applyTranslations(currentLang);
-});
 
 const modalTriggers = document.querySelectorAll('.more');
 const modals = {
@@ -171,19 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-if (langBtn) {
-  langBtn.addEventListener('click', () => {
-    currentLang = currentLang === 'ru' ? 'en' : 'ru';
-    langBtn.textContent = currentLang === 'ru' ? '🇷🇺' : '🇬🇧';
-    applyTranslations(currentLang);
-  });
-}
-
-// хаваем перевод
-document.addEventListener('DOMContentLoaded', () => {
-  applyTranslations(currentLang);
-});
-
 window.addEventListener('scroll', function() {
   const header = document.querySelector('header');
   if (window.scrollY > 100) {
@@ -191,4 +170,8 @@ window.addEventListener('scroll', function() {
   } else {
     header.classList.remove('sticky');
   }
+});
+
+langBtn.addEventListener('click', function() {
+  console.log('Кнопка нажата!');
 });
