@@ -13,7 +13,7 @@ const translations = {
     project_mayson_name: "Mayson",
     project_mayson_desc: "Устаревший Discord бот, который являлся более дегроидной версией Pixel.",
     project_yoro_name: "Yoro",
-    project_yoro_desc: "Чат-бот для модерации, генерации изображений нейросетью, развлечений и гибких настроек – ваш идеальный помощник на Discord..",
+    project_yoro_desc: "Чат-бот для модерации, генерации изображений нейросетью, развлечений и гибких настроек – ваш идеальный помощник на Discord.",
     project_helanova_name: "Helanova Team",
     project_helanova_desc: "Команда по разработке Discord ботов, игр и приложений. Только начинает свой путь в этой индустрии.",
     more_details: "Подробнее →",
