@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="page_title">Helaney</title>
+  <link rel="icon" href="assets/этиф.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home" class="active" data-i18n="nav_home">Главная</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Проекты</a></li>
+        <li><a href="#contact" data-i18n="nav_contacts">Контакты</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button id="lang-btn" class="lang-btn" aria-label="Переключить язык">
+        <span class="flag">🇷🇺</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section home">
+      <div class="home-content">
+        <div class="home-text">
+          <h1 data-i18n="home_name">Helaney</h1>
+          <h2 class="home-subtitle", data-i18n="home_title">Начинающий разработчик</h2>
+          <p data-i18n="home_desc">
+            Начинающий программист. Специализируюсь на создании простых Discord ботов и нетрудных программ.
+          </p>
+        </div>
+        <div class="avatar-block">
+          <img src="assets/этиф.jpg" alt="Helaney Avatar" class="avatar" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2 data-i18n="projects_title">Проекты</h2>
+      <div class="project-cards">
+        <div class="card">
+          <img src="assets/паштет.png" alt="Pixel" />
+          <div class="card-body">
+            <h3 data-i18n="project_pixel_name">Pixel</h3>
+            <p data-i18n="project_pixel_desc">Устаревший Discord бот, который мог модерировать ваши сервера и развлекать участников.</p>
+            <div class="tags"><span>Python</span><span>Disnake</span><span>More</span></div>
+            <a href="#" class="more" data-modal="pixel-modal" data-i18n="more_details">Подробнее →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/Мейсон.png" alt="Mayson" />
+          <div class="card-body">
+            <h3 data-i18n="project_mayson_name">Mayson</h3>
+            <p data-i18n="project_mayson_desc">Устаревший Discord бот, который являлся более дегроидной версией Pixel.</p>
+            <div class="tags"><span>Python</span><span>Disnake</span></div>
+            <a href="https://github.com/hhelaneyy/Mayson" class="more" data-i18n="more_details">Подробнее →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/Helanova.png" alt="Helanova" />
+          <div class="card-body">
+            <h3 data-i18n="project_helanova_name">Helanova Team</h3>
+            <p data-i18n="project_helanova_desc">Команда по разработке Discord ботов, игр и приложений. Только начинает свой путь в этой индустрии.</p>
+            <div class="tags"><span>C#</span><span>C++</span><span>Python</span><span>More</span></div>
+            <a href="https://github.com/Helanova-Team" class="more" data-i18n="more_details">Подробнее →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/Йоро.png" alt="Yoro" />
+          <div class="card-body">
+            <h3 data-i18n="project_yoro_name">Yoro</h3>
+            <p data-i18n="project_yoro_desc">Чат-бот для модерации, генерации изображений нейросетью, развлечений и гибких настроек – ваш идеальный помощник на Discord.</p>
+            <div class="tags"><span>Python</span><span>Disnake</span><span>More</span></div>
+            <a href="https://helanova-team.github.io/yoro-web/" class="more" data-i18n="more_details">Подробнее →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="section contacts">
+      <h2 data-i18n="contacts_title">Контакты</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="text">
+            <h4 data-i18n="email_title">Email</h4>
+            <p><a href="mailto:helaney@mail.ru">helaney@mail.ru</a></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="text">
+            <h4 data-i18n="availability">Доступность</h4>
+            <p data-i18n="availability_time">Пн-Пт, 11:00 – 18:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-buttons">
+        <a href="https://t.me/hhelaneyy" class="contact-button telegram" target="_blank" aria-label="Telegram"></a>
+        <a href="https://github.com/hhelaneyy" class="contact-button github" target="_blank" aria-label="GitHub"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer_text">© 2025, сделано с ❤️ Helaney.</p>
+  </footer>
+
+  <div id="pixel-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 class="modal-title" data-i18n="modal_title">💔 Ой-ой!</h3>
+      <p data-i18n="private_project">Этот проект является приватным и недоступен для просмотра на Github.</p>
+    </div>
+  </div>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Вернуться наверх">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
