@@ -40,61 +40,69 @@
     </section>
 
     <section id="projects" class="section projects">
-      <h2 data-i18n="projects_title">Проекты</h2>
+      <h2 class="section-title" data-i18n="projects_title">Проекты</h2>
       
-      <h3 class="projects-subtitle" data-i18n="cont_projects_title">Участвую в проектах</h3>
-      <div class="project-cards">
-        <div class="card">
-          <img src="assets/хухпенс.png" alt="Heypers Project" />
-          <div class="card-body">
-            <h3>Heypers Project</h3>
-            <p data-i18n="project_heypers_desc">Мультипроект, объединяющий управление, менеджмент, модерацию и разработку.</p>
-            <div class="tags"><span>Django</span><span>Python</span><span>Java</span><span>Django REST API</span><span>Gradle</span></div>
-            <a href="https://heypers.org/" class="more" data-i18n="more_details">Подробнее →</a>
+      <div class="projects-section">
+        <h3 class="projects-subtitle">Участвую в проектах</h3>
+        <div class="project-cards">
+          <div class="card">
+            <img src="assets/хухпенс.png" alt="Heypers Project" />
+            <div class="card-body">
+              <h3>Heypers Project</h3>
+              <p class="project-description">Проект по созданию инновационных решений для цифрового взаимодействия.</p>
+              <div class="tags"><span>Django</span><span>Python</span><span>Java</span><span>Django REST API</span><span>Gradle</span></div>
+              <a href="#" class="more">Подробнее →</a>
+            </div>
           </div>
         </div>
       </div>
       
-      <h3 class="projects-subtitle" data-i18n="my_projects_title">Мои проекты</h3>
-      <div class="project-cards">
-        <div class="card">
-          <img src="assets/паштет.png" alt="Pixel" />
-          <div class="card-body">
-            <h3 data-i18n="project_pixel_name">Pixel</h3>
-            <p data-i18n="project_pixel_desc">Устаревший Discord бот, который мог модерировать ваши сервера и развлекать участников.</p>
-            <div class="tags"><span>Python</span><span>Disnake</span><span>More</span></div>
-            <a href="#" class="more" data-modal="pixel-modal" data-i18n="more_details">Подробнее →</a>
+      <div class="projects-section">
+        <h3 class="projects-subtitle">Мои проекты</h3>
+        <div class="project-cards">
+          <div class="card">
+            <img src="assets/color.jpg" alt="ColorHarmony" />
+            <div class="card-body">
+              <h3>ColorHarmony</h3>
+              <p>Веб-приложение для генерации цветовых палитр с возможностью сохранения и экспорта.</p>
+              <div class="tags"><span>HTML</span><span>JavaScript</span><span>CSS</span></div>
+              <a href="https://colorharmony.helaney.ru/" class="more" target="_blank">Подробнее →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/Мейсон.png" alt="Mayson" />
+            <div class="card-body">
+              <h3 data-i18n="project_mayson_name">Mayson</h3>
+              <p data-i18n="project_mayson_desc">Устаревший Discord бот, который являлся более дегроидной версией Pixel.</p>
+              <div class="tags"><span>Python</span><span>Disnake</span></div>
+              <a href="https://github.com/hhelaneyy/Mayson" class="more" data-i18n="more_details">Подробнее →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/Helanova.png" alt="Helanova" />
+            <div class="card-body">
+              <h3 data-i18n="project_helanova_name">Helanova Team</h3>
+              <p data-i18n="project_helanova_desc">Команда по разработке Discord ботов, игр и приложений. Только начинает свой путь в этой индустрии.</p>
+              <div class="tags"><span>C#</span><span>C++</span><span>Python</span><span>More</span></div>
+              <a href="https://github.com/Helanova-Team" class="more" data-i18n="more_details">Подробнее →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/Йоро.png" alt="Yoro" />
+            <div class="card-body">
+              <h3 data-i18n="project_yoro_name">Yoro</h3>
+              <p data-i18n="project_yoro_desc">Чат-бот для модерации, генерации изображений нейросетью, развлечений и гибких настроек – ваш идеальный помощник на Discord.</p>
+              <div class="tags"><span>Python</span><span>Disnake</span><span>More</span></div>
+              <a href="https://helanova-team.github.io/yoro-web/" class="more" data-i18n="more_details">Подробнее →</a>
+            </div>
           </div>
         </div>
-
-        <div class="card">
-          <img src="assets/Мейсон.png" alt="Mayson" />
-          <div class="card-body">
-            <h3 data-i18n="project_mayson_name">Mayson</h3>
-            <p data-i18n="project_mayson_desc">Устаревший Discord бот, который являлся более дегроидной версией Pixel.</p>
-            <div class="tags"><span>Python</span><span>Disnake</span></div>
-            <a href="https://github.com/hhelaneyy/Mayson" class="more" data-i18n="more_details">Подробнее →</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/Helanova.png" alt="Helanova" />
-          <div class="card-body">
-            <h3 data-i18n="project_helanova_name">Helanova Team</h3>
-            <p data-i18n="project_helanova_desc">Команда по разработке Discord ботов, игр и приложений. Только начинает свой путь в этой индустрии.</p>
-            <div class="tags"><span>C#</span><span>C++</span><span>Python</span><span>More</span></div>
-            <a href="https://github.com/Helanova-Team" class="more" data-i18n="more_details">Подробнее →</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/Йоро.png" alt="Yoro" />
-          <div class="card-body">
-            <h3 data-i18n="project_yoro_name">Yoro</h3>
-            <p data-i18n="project_yoro_desc">Чат-бот для модерации, генерации изображений нейросетью, развлечений и гибких настроек – ваш идеальный помощник на Discord.</p>
-            <div class="tags"><span>Python</span><span>Disnake</span><span>More</span></div>
-            <a href="https://helanova-team.github.io/yoro-web/" class="more" data-i18n="more_details">Подробнее →</a>
-          </div>
+        <!-- Кнопка "Все проекты" -->
+        <div class="all-projects-btn-container">
+          <a href="https://github.com/hhelaneyy?tab=repositories" class="all-projects-btn" target="_blank">Все проекты</a>
         </div>
       </div>
     </section>
@@ -125,14 +133,6 @@
   <footer>
     <p data-i18n="footer_text">© 2025, сделано с ❤️ Helaney.</p>
   </footer>
-
-  <div id="pixel-modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h3 class="modal-title" data-i18n="modal_title">💔 Ой-ой!</h3>
-      <p data-i18n="private_project">Этот проект является приватным и недоступен для просмотра на Github.</p>
-    </div>
-  </div>
 
   <button id="back-to-top" class="back-to-top" aria-label="Вернуться наверх">↑</button>
   <script src="script.js"></script>
