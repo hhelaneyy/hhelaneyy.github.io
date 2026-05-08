@@ -1,18 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-.cascadia-code-regular {
+@keyframes rainbow {
+  0%   { color: hsl(0, 100%, 50%); }
+  25%  { color: hsl(90, 100%, 50%); }  
+  50%  { color: hsl(180, 100%, 50%); } 
+  75%  { color: hsl(270, 100%, 50%); }   
+  100% { color: hsl(360, 100%, 50%); } 
+}
+ 
+.rainbow {
+  animation: 3s infinite rainbow;
+}
+
+.audiowide {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cascadia {
   font-family: "Cascadia Code", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 200;
   font-style: normal;
 }
 
 body {
-    background: #50acc5;
-}
-
-section {
-    margin: 5%;
+    background: #F8F9FA;
 }
 
 .image {
@@ -26,12 +41,27 @@ section {
     height: 200px;
 }
 
-.c-align {
-    color: #a2f4d2;
-    font-size: 175%;
+.text-section1 {
+    display: block;
+    color: #212529;
+    align-items: center;
+    font-size: 165%;
     text-align: center;
+    margin: 5%;
 }
 
-.c-align-color {
-    color: #8defb8;
+.text-footer {
+    text-align: center;
+    color: #212529;
+    font-size: 165%;
+}
+
+.footer {
+    background: #E9ECEF;
+    padding: 20px;
+    border-top: 1px solid #DEE2E6;
+}
+
+.sub-text-color {
+    color: #6C757D;
 }
