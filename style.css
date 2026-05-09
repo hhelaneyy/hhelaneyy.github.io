@@ -8,6 +8,31 @@
   75%  { color: hsl(270, 100%, 50%); }   
   100% { color: hsl(360, 100%, 50%); } 
 }
+
+nav {
+    background-color: #E9ECEF;
+    padding: 20px;
+    border-top: 1px solid #DEE2E6;
+}
+
+.navbar-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-nav ul li {
+    float: left;
+}
+
+.navbar-nav ul li .git, ul li .tg {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
  
 .rainbow {
   animation: 3s infinite rainbow;
@@ -26,6 +51,16 @@
   font-style: normal;
 }
 
+.body-style {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-style {
+    flex: 1;
+}
+
 body {
     background: #F8F9FA;
 }
@@ -41,22 +76,40 @@ body {
     height: 200px;
 }
 
+/* Стороны */
+.left {
+    display: grid;
+    text-align: left;
+}
+
+.center {
+    display: grid;
+    text-align: center;
+}
+
+/* чото */
+
 .text-section1 {
     display: block;
     color: #212529;
     align-items: center;
     font-size: 165%;
     text-align: center;
-    margin: 5%;
+    margin: 2%;
+}
+
+.title {
+    font-size: 124px;
+    margin-top: 10%;
 }
 
 .text-footer {
     text-align: center;
     color: #212529;
-    font-size: 165%;
+    font-size: 100%;
 }
 
-.footer {
+footer {
     background: #E9ECEF;
     padding: 20px;
     border-top: 1px solid #DEE2E6;
