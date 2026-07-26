@@ -1,0 +1,83 @@
+/* импорты */
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+::selection {
+  background: #b09bc4;
+}
+::-moz-selection {
+  background: #b09bc4;
+}
+
+.button {
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    color: #d0bed9;
+}
+
+body {
+    display: flex;
+    background: #bab5d3;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.audiowide {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cascadia {
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.elms-sans {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 5px;
+  font-style: normal;
+}
+
+.card {
+    width: 700px;
+    height: 100px;
+    background-color: #373943;
+    border: 5px solid #505062;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 450px;
+}
+
+.card-font {
+    display: block;
+    color: #6e78aa;
+    align-items: center;
+    font-size: 165%;
+    text-align: center;
+}
+
+.font {
+    display: block;
+    color: #6e78aa;
+    align-items: center;
+    font-size: 165%;
+    text-align: left;
+}
+
+.title {
+    font-size: 100px;
+}
+
+.line {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 2px solid #8e96bd;
+}
