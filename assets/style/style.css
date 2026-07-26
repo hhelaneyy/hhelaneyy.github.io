@@ -49,10 +49,10 @@ body {
     width: 700px;
     height: 100px;
     background-color: #373943;
-    border: 5px solid #505062;
+    border: 2px solid #505062;
     border-radius: 30px;
     padding: 10px;
-    margin-left: 600px;
+    align-self: center;
 }
 
 .card-font {
